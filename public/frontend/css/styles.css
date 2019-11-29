@@ -32,6 +32,13 @@
 	- Utilities
 
    /--TABLE OF CONTENTS--  */
+
+   .input-label {
+    color: #e2c6ba;
+    padding-top: 0.2rem;
+    font-size: 1.4rem;
+    /* padding-left: 42.30769230769231px; */
+}
 h1,
 h2,
 h3,
@@ -5166,8 +5173,9 @@ img.mfp-img {
   height: 55px;
   padding-left: 42.30769230769231px;
   font-size: 16px;
-  background: none;
+  /* background: none; */
 }
+
 @media (max-width: 992px) {
   .theme-search-area-section-input {
     line-height: 55px;
