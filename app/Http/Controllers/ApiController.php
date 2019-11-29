@@ -11,24 +11,26 @@ class ApiController extends Controller
     public function test(Request $request)
     {
         $client = new Client();
-        $queries = [
-            'origin_destinations' =>[
+        $params['headers'] = ['Content-Type' => 'application/json'];
+        $queries['json'] = [
                 'departure_city' => $request->departure_city,
                 'destination_city' => $request->destination_city,
                 'departure_date' => $request->departure_date,
-            ],
-            'search_param' => [
                 'no_of_adult' => $request->no_of_adult ?? 1,
                 'no_of_child' => $request->no_of_child ?? 1,
                 'no_of_infant' => $request->no_of_infant ?? 1,
                 'calendar' => $request->calendar,
                 'preferred_airline_code' => $request->preferred_airline_code ?? 'ANS',
                 'cabin' => $request->cabin ?? 'All',
-            ]
         ];
         $result = $client->post('http://www.ije-api.tcore.xyz/v1/flight/get-all-bookings/v1/flight/search-flight',$queries);
-        $response = $request->getBody();
+        // $response = $result->send();
+        $response = $result->getBody();
+        if($response->status == 404){
+            dd('kddkd');
+        }
         return response()->json($response);
+
     }
     public function airlines(Request $request)
     {

@@ -68,46 +68,14 @@
                     </div>
                  </div>
                  <div class="row" data-gutter="none" style="padding-top: 10px !important;">
-                    <div class="col-md-6 ">
-                       <div class="row" data-gutter="none">
-                          <div class="col-md-6 ">
-                             <div class="theme-search-area-section first theme-search-area-section-curved">
-                                <div class="theme-search-area-section-inner">
-                                   <i class="theme-search-area-section-icon lin lin-plane"></i>
-                                   <select class="theme-search-area-section-input" name="cabin_class">
-                                      <option value="" disabled="">Choose...</option>
-                                      <option value="First">First class</option>
-                                      <option value="Economy">Economy class</option>
-                                      <option value="Premium">Premium class</option>
-                                      <option value="Business">Business class</option>
-                                      <option value="All">All classes</option>
-                                   </select>
-                                </div>
-                                <p class="input-label">Cabin Class</p>
-                             </div>
-                          </div>
-                          <div class="col-md-6 ">
-                             <div class="theme-search-area-section theme-search-area-section-curved">
-                                <div class="theme-search-area-section-inner">
-                                   <i class="theme-search-area-section-icon lin lin-people"></i><input class="theme-search-area-section-input" type="number" placeholder="No. of Adults"  name="adults" >
-                                   {{-- 
-                                   <p class="info-input">above 12 yrs</p>
-                                   --}}
-                                </div>
-                                {{-- 
-                                <p class="input-label">No. of Adults</p>
-                                --}}
-                             </div>
-                          </div>
-                       </div>
-                    </div>
+                   
                     <div class="col-md-6 ">
                        <div class="row" data-gutter="none">
                           <div class="col-md-6">
                              <div class="theme-search-area-section theme-search-area-section-curved">
                                 <div class="theme-search-area-section-inner">
                                    <i class="theme-search-area-section-icon lin lin-people">
-                                   </i><input class="theme-search-area-section-input" type="number" name="children" placeholder="No. of Children" value="4">
+                                   </i><input class="theme-search-area-section-input" type="number" name="no_of_child" placeholder="No. of Children" value="4">
                                    {{-- 
                                    <p class="info-input">2-12 yrs</p>
                                    --}}
@@ -121,7 +89,7 @@
                              <div class="theme-search-area-section theme-search-area-section-curved">
                                 <div class="theme-search-area-section-inner section-inner-last">
                                    <i class="theme-search-area-section-icon lin lin-people"></i>
-                                   <input class="theme-search-area-section-input" type="number" name="infants" placeholder="No. of Infants" value="3">
+                                   <input class="theme-search-area-section-input" type="number" name="no_of_infant" placeholder="No. of Infants" value="3">
                                    {{-- 
                                    <p class="info-input">0-2 yrs</p>
                                    --}}
